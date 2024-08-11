@@ -1,0 +1,15 @@
+@import '../../styles';
+
+.wrapper {
+  @include flexbox(space-between, center, row, 0);
+  @include section(auto, 2% 0);
+
+  h1 {
+    @include text($primary-white, 400, 35px, Clicker Script);
+  }
+
+  .options {
+    @include flexbox(flex-start, center, row, 20px);
+    @include text($primary-white, 300, 14px, Playfair Display);
+  }
+}

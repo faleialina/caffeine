@@ -1,0 +1,44 @@
+@import '../../styles';
+
+.bcgr {
+  @include preview-img(url(./assets/bcgr.png), 100%, 374px, cover);
+  background-position: center;
+}
+
+.bcgrFooter {
+  @include preview-img(url(./assets/fotter_image.png), 100%, 374px, cover);
+  background-position: center;
+
+  .wrapper {
+    @include section(auto, 3% 0);
+    @include flexbox(space-between, start, row, 60px);
+  }
+
+  h2 {
+    @include text($primary-white, 400, 54px, Clicker Script);
+    line-height: 71px;
+  }
+
+  h3 {
+    @include text($primary-white, 300, 26px, Playfair Display);
+    line-height: 71px;
+  }
+
+  p {
+    @include text($primary-white, 400, 16px, Playfair Display);
+  }
+
+  .item {
+    @include flexbox(flex-start, start, column, 20px);
+    max-width: 380px;
+  }
+
+  .icons {
+    @include flexbox(space-between, center, row, 10px);
+    width: 156px;
+
+    img {
+      display: block;
+    }
+  }
+}

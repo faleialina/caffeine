@@ -1,7 +1,7 @@
 function Options({ option }) {
   return (
     <a>
-      <p>{option.label}</p>
+      <p onClick={() => scroll(0, option.path)} >{option.label}</p>
     </a>
   );
 }

@@ -3,10 +3,10 @@ import Options from './Options';
 import style from './header.module.scss';
 
 const options = [
-  { id: 1, label: 'Home', path: '/' },
-  { id: 2, label: 'Menu' , path: '/'},
-  { id: 3, label: 'About Us' , path: '/'},
-  { id: 4, label: 'Contact Us', path: '/contactUs' },
+  { id: 1, label: 'Home', path: 800 },
+  { id: 2, label: 'Menu', path: 1450 },
+  { id: 3, label: 'About Us', path: 2120 },
+  { id: 4, label: 'Contact Us', path: 5000 },
 ];
 
 function Header() {

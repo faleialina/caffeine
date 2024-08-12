@@ -42,3 +42,62 @@
     }
   }
 }
+
+@media screen and (min-width: 767px) and (max-width: 1210px) {
+  .wrapper {
+    h3 {
+      @include text(#603809, 700, 24px, Playfair Display);
+    }
+
+    p {
+      @include text(#707070, 400, 16px, Playfair Display);
+    }
+
+    .leftArrow,
+    .rightArrow {
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .leftArrow {
+      left: -10px;
+    }
+
+    .rightArrow {
+      right: -10px;
+    }
+
+    .content {
+      max-width: 620px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    h3 {
+      @include text(#603809, 700, 20px, Playfair Display);
+    }
+
+    p {
+      @include text(#707070, 400, 12px, Playfair Display);
+    }
+
+    .leftArrow,
+    .rightArrow {
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .leftArrow {
+      left: -20px;
+    }
+
+    .rightArrow {
+      right: -20px;
+    }
+    .content {
+      max-width: 380px;
+    }
+  }
+}

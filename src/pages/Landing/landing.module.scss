@@ -213,3 +213,216 @@
     @include text(#707070, 400, 20px, Playfair Display);
   }
 }
+
+@media screen and (min-width: 767px) and (max-width: 1210px) {
+  .button {
+    width: 110px;
+    height: 38px;
+    border-radius: 20px;
+    @include text($primary-white, 300, 14px, Playfair Display);
+    color: #1e1e1e;
+  }
+
+  .landingBgr {
+    .landing {
+      h1 {
+        @include text($primary-white, 400, 180px, Clicker Script);
+        max-width: 400px;
+      }
+
+      p {
+        @include text($primary-white, 300, 18px, Playfair Display);
+        max-width: 400px;
+      }
+    }
+  }
+
+  .coffeeDiscovery {
+    h2 {
+      @include text(#603809, 700, 46px, Playfair Display);
+    }
+
+    p {
+      @include text(#707070, 400, 24px, Playfair Display);
+    }
+
+    img {
+      width: 305px;
+    }
+  }
+
+  .menu {
+    h2 {
+      @include text(#603809, 700, 46px, Playfair Display);
+    }
+
+    p {
+      @include text(#707070, 400, 24px, Playfair Display);
+    }
+    .content {
+      @include flexbox(center, flex-start, row, 5px);
+    }
+  }
+
+  .about {
+    h2 {
+      @include text(#603809, 700, 46px, Playfair Display);
+    }
+
+    h3 {
+      @include text(#603809, 700, 24px, Playfair Display);
+    }
+
+    p {
+      @include text(#707070, 400, 18px, Playfair Display);
+    }
+
+    .content {
+      @include flexbox(center, flex-start, row, 10px);
+
+      .item {
+        width: 280px;
+        @include flexbox(center, center, column, 30px);
+      }
+      .itemInfo {
+        h3 {
+          @include text(#603809, 700, 24px, Playfair Display);
+        }
+      }
+    }
+  }
+
+  .coffeeBgr {
+    .coffee {
+      .content {
+        max-width: 400px;
+      }
+
+      h2 {
+        @include text($primary-white, 700, 46px, Playfair Display);
+      }
+
+      p {
+        @include text($primary-white, 300, 18px, Playfair Display);
+      }
+    }
+    img {
+      width: 305px;
+    }
+  }
+
+  .slider {
+    h2 {
+      @include text(#603809, 700, 46px, Playfair Display);
+    }
+
+    p {
+      @include text(#707070, 400, 18px, Playfair Display);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    width: 100px;
+    height: 30px;
+    border-radius: 18px;
+    @include text($primary-white, 300, 12px, Playfair Display);
+    color: #1e1e1e;
+  }
+
+  .landingBgr {
+    .landing {
+      h1 {
+        @include text($primary-white, 400, 130px, Clicker Script);
+        max-width: 300px;
+      }
+
+      p {
+        @include text($primary-white, 300, 16px, Playfair Display);
+        max-width: 300px;
+      }
+    }
+  }
+
+  .coffeeDiscovery {
+    h2 {
+      @include text(#603809, 700, 30px, Playfair Display);
+    }
+
+    p {
+      @include text(#707070, 400, 20px, Playfair Display);
+    }
+
+    img {
+      width: 235px;
+    }
+  }
+
+  .menu {
+    h2 {
+      @include text(#603809, 700, 30px, Playfair Display);
+    }
+
+    p {
+      @include text(#707070, 400, 20px, Playfair Display);
+      text-align: center;
+    }
+    .content {
+      @include flexbox(center, flex-start, column, 20px);
+    }
+  }
+
+  .about {
+    h2 {
+      @include text(#603809, 700, 30px, Playfair Display);
+    }
+
+    h3 {
+      @include text(#603809, 700, 20px, Playfair Display);
+    }
+
+    p {
+      @include text(#707070, 400, 12px, Playfair Display);
+    }
+
+    .content {
+      @include flexbox(center, flex-start, column, 10px);
+
+      .item {
+        @include flexbox(center, center, column, 30px);
+      }
+
+      .itemInfo {
+        h3 {
+          @include text(#603809, 700, 20px, Playfair Display);
+        }
+      }
+    }
+  }
+
+  .coffeeBgr {
+    .coffee {
+      h2 {
+        @include text($primary-white, 700, 30px, Playfair Display);
+      }
+
+      p {
+        @include text($primary-white, 300, 12px, Playfair Display);
+      }
+    }
+    img {
+      width: 235px;
+    }
+  }
+
+  .slider {
+    h2 {
+      @include text(#603809, 700, 30px, Playfair Display);
+    }
+
+    p {
+      @include text(#707070, 400, 12px, Playfair Display);
+    }
+  }
+}

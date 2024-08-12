@@ -1,7 +1,12 @@
 function Options({ option }) {
   return (
-    <a>
-      <p onClick={() => scroll(0, option.path)} >{option.label}</p>
+    <a
+      style={{
+        transition: 'scroll-position 0.5s ease-in-out',
+      }}
+      onClick={() => scroll(0, option.path)}
+    >
+      <p>{option.label}</p>
     </a>
   );
 }

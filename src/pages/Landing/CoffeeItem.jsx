@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import Modal from '../../components/Modal/Modal';
 import style from './landing.module.scss';
 
+const cofePrace = [
+  { size: 'S', count: '1s', coefficient: 1 },
+  { size: 'M', count: '2s', coefficient: 1.5 },
+  { size: 'L', count: '3s', coefficient: 2 },
+  { size: 'XL', count: '4s', coefficient: 2.5 },
+];
+
 function CoffeeItem({ coffee }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [priceCoefficient, setPriceCoefficient] = useState(1);
-
-  const cofePrace = [
-    { size: 'S', count: '1s', coefficient: 1 },
-    { size: 'M', count: '2s', coefficient: 1.5 },
-    { size: 'L', count: '3s', coefficient: 2 },
-    { size: 'XL', count: '4s', coefficient: 2.5 },
-  ];
 
   const handleOrderClick = () => {
     document.body.style = `overflow: hidden`;

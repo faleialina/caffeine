@@ -370,6 +370,12 @@
     }
     .content {
       @include flexbox(center, flex-start, column, 20px);
+
+      .item {
+        .itemsSize {
+          gap: 5px;
+        }
+      }
     }
   }
 

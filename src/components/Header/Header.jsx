@@ -5,7 +5,7 @@ const point = window.innerWidth;
 const options = [
   { id: 1, label: 'Home', path: point < 760 ? 550 : point < 1210 ? 650 : 800 },
   { id: 2, label: 'Menu', path: point < 760 ? 850 : point < 1210 ? 1050 : 1450 },
-  { id: 3, label: 'About Us', path: point < 760 ? 2850 : point < 1210 ? 2100 : 2020 },
+  { id: 3, label: 'About Us', path: point < 760 ? 2850 : point < 1210 ? 2300 : 2020 },
   { id: 4, label: 'Contact Us', path: point < 760 ? 3600 : point < 1210 ? 2800 : 5000 },
 ];
 
